@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-link active" onclick="showForm('login')">Login</button>
+            <button class="tab-link" onclick="showForm('signup')">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login" class="active" onsubmit="loginUser(event)">
+            <h2>Login</h2>
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" placeholder="Enter your username" required>
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Enter your password" required>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <!-- Sign-Up Form -->
+        <form id="signup" onsubmit="signUpUser(event)">
+            <h2>Sign Up</h2>
+            <label for="signup-username">Username</label>
+            <input type="text" id="signup-username" placeholder="Enter your username" required>
+
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" placeholder="Enter your email" required>
+
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="Enter your password" required>
+
+            <label for="signup-confirm-password">Confirm Password</label>
+            <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
