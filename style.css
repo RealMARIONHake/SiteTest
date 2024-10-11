@@ -1,44 +1,41 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #333;
-    color: white;
+.container {
+    display: flex;
+    width: 80%;
+}
+
+.chat-box {
+    flex: 1;
+    border: 1px solid #ccc;
     padding: 10px;
-    text-align: center;
+    margin-right: 10px;
+    background: white;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-}
-
-footer {
-    text-align: center;
+.game-box {
+    flex: 2;
+    border: 1px solid #ccc;
     padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: white;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#message-input {
+    width: 80%;
+}
+
+#send-btn {
+    width: 15%;
 }
